@@ -1,17 +1,16 @@
-import time
-time1 = time.time()
 num = 600851475143
-factors = []
-while True:
-    if num == 1:
-        break
-    f = 2
+def fact(n):
+    number = n
+    factors = []
     while True:
-        if num % f == 0:
-            factors.append(f)
-            num = num / f
+        if number == 1:
             break
-        f += 1
-print(factors[-1])
-time2 =  time.time()
-print(time2-time1)
+        f = 2
+        while True:
+            if number % f == 0:
+                factors.append(f)
+                number = number / f
+                break
+            f += 1
+    return factors
+print(fact(num)[-1])
