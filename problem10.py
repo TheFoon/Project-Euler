@@ -1,4 +1,4 @@
-def prime(n):
+def prime(n):#312828th person to have solved this problem
     primes = [2, 3, 5]
     p = 7
     while p < n:
@@ -9,4 +9,4 @@ def prime(n):
             primes.append(p)
         p += 2
     return primes
-print(sum(prime(2000000)))
+print(sum(prime(2000000)))#142913828922
