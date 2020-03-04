@@ -1,4 +1,5 @@
 num = 600851475143
+
 def fact(n):
     number = n
     factors = []
@@ -13,4 +14,5 @@ def fact(n):
                 break
             f += 1
     return factors
+
 print(fact(num)[-1])
