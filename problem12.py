@@ -1,3 +1,4 @@
+from problem3 import fact as f
 def fact(n):
     factors = []
     for i in range(1, n+1):
@@ -9,6 +10,7 @@ add = 1
 while True:
     tri += add
     add += 1
-    if len(fact(tri)) > 500:
+    print(f"{tri}: {len(f(tri))} {len(fact(tri))}")
+    if len(fact(tri)) > 50:
         break
 print(tri) # ötlet: primekre felosztani; azok alapján kiszámolni az osztók számát
