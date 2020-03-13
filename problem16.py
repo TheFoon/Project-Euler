@@ -1,0 +1,1 @@
+print(sum([int(x) for x in str(2**1000)]))#1366         218720th person to have solved this problem
